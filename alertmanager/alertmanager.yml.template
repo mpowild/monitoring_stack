@@ -13,13 +13,12 @@ route:
       matchers:
         - severity="high"
 
-
 receivers:
   - name: 'mail'
     email_configs:
       - smarthost: 'smtp.gmail.com:465'
         auth_username: '<my personal gmail account>'
-        auth_password: "wyresgkqqphkixsa"
+        auth_password: "<gmail app password 'monitoring_stack'>"
         from: '<my personal email account>'
         to: '<my work email account>'
         require_tls: false
