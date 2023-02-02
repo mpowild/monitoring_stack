@@ -17,12 +17,13 @@ route:
 receivers:
   - name: 'mail'
     email_configs:
-      - smarthost: 'yourmailhost.com:465'
-        auth_username: 'yourmail@yourmailhost.com'
-        auth_password: "your mail password"
-        from: 'yourmail@yourmailhost.com'
-        to: 'someonesmail@yourmailhost.com'
+      - smarthost: 'smtp.gmail.com:465'
+        auth_username: '<my personal gmail account>'
+        auth_password: "wyresgkqqphkixsa"
+        from: '<my personal email account>'
+        to: '<my work email account>'
         require_tls: false
+        send_resolved: true
 
   - name: 'teams'
     webhook_configs:
